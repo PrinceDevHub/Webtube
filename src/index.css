@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scrollbar-width: thin; /* Set thin scrollbar for Firefox */
+}
+
+/* Webkit scrollbar styling */
+*::-webkit-scrollbar {
+  width: 2px; /* Width of the scrollbar */
+  background-color: transparent; /* Transparent background */
+}
+
+/* Directly define the color */
+*::-webkit-scrollbar-thumb {
+  background-color: #4B5563; /* Replace with your desired color */
+  border-radius: 9999px; /* Rounded corners */
+}
+
+/* Scrollbar hidden */
+.scrollbar-hidden::-webkit-scrollbar {
+  width: 0; /* Hide the scrollbar completely */
+}
+
+.scrollbar-hidden::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Hide the thumb */
+}
+
+/* Hover effect on scrollbar thumb */
+.scrollbar-hidden:hover::-webkit-scrollbar-thumb {
+  background-color: #D1D5DB; /* Replace with desired color for hover */
+}
